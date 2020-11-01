@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% load my_extras %}
+<!-- load templatetags my_extras.py -->
+  {% block body_block %}
+    <h1>this is home page</h1>
+    <h2>this is index.html showing</h2>
+
+    <h2>{{ text|func:'world' }}</h2>
+    <!-- "|" is filter -->
+    <h2>{{ number|add:"99" }}</h2>
+
+  {% endblock %}
